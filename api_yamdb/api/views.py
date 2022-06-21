@@ -14,14 +14,15 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Category, Genre, Review, Title
 
-from api.filters import TitleFilter
-from api.permissions import (IsAdminRole, IsReadOnly,
-                          RetrieveOnlyOrHasCUDPermissions, IsMe)
-from api.serializers import (AdminUserSerializer, CategorySerializer,
-                          CommentSerializer, ConfirmationCodeSerializer,
+from .filters import TitleFilter
+from .permissions import (IsAdminRole, IsMe, 
+                          IsReadOnly, RetrieveOnlyOrHasCUDPermissions)
+from .serializers import (AdminUserSerializer, CategorySerializer,
+                          ConfirmationCodeSerializer, CommentSerializer,
                           GenreSerializer, JWTTokenSerializer, MeSerializer,
                           ReviewSerializer, TitlePostSerializer,
                           TitleViewSerializer)
+
 
 User = get_user_model()
 
