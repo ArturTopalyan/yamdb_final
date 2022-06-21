@@ -12,13 +12,12 @@ from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
-
 from reviews.models import Category, Genre, Review, Title
 
-from .filters import TitleFilter
-from .permissions import (IsAdminRole, IsReadOnly,
+from api.filters import TitleFilter
+from api.permissions import (IsAdminRole, IsReadOnly,
                           RetrieveOnlyOrHasCUDPermissions, IsMe)
-from .serializers import (AdminUserSerializer, CategorySerializer,
+from api.serializers import (AdminUserSerializer, CategorySerializer,
                           CommentSerializer, ConfirmationCodeSerializer,
                           GenreSerializer, JWTTokenSerializer, MeSerializer,
                           ReviewSerializer, TitlePostSerializer,
