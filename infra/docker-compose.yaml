@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: lauman90/yamdb:v1.02
+    image: lauman90/yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
@@ -24,7 +24,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./infra/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
       - media_value:/var/html/media/
     depends_on:
