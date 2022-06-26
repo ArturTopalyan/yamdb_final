@@ -79,3 +79,8 @@ docker-compose exec web python manage.py import_data
 Адрес приложения: http://{ваш IP}/api/v1/
 
 Документация: http://{ваш IP}/redoc/
+
+Тестовый сервер:
+http://51.250.19.76/api/v1/
+http://51.250.19.76/redoc/
+http://51.250.19.76/admin/
