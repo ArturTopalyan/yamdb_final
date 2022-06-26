@@ -65,18 +65,17 @@ TELEGRAM_TOKEN=<токен вашего бота>
 ```
 
 ### После успешного деплоя зайдите на боевой сервер и выполните команды (только после первого деплоя):
-```
 #### Создайте суперпользователя
 ```
 docker-compose exec web python manage.py createsuperuser
 =======
 ```
-#### Создайте суперпользователя
+#### Импортируйте демострационные данные
 ```
 docker-compose exec web python manage.py import_data  
 ```
 ### Сервер и документация по API
 
-Адрес приложения: http://localhost/api/v1/
+Адрес приложения: http://{ваш IP}/api/v1/
 
-Документация: http://localhost/redoc/
+Документация: http://{ваш IP}/redoc/
