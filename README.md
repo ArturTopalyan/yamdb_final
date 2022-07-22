@@ -1,6 +1,6 @@
 # CI и CD проекта api_yamdb
 
-![workflow](https://github.com/lauman302/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![workflow](https://github.com/ArturTopalyan/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 В проекте yamdb_final произведена настройка для приложения api_yamdb Continuous Integration и Continuous Deployment:
 - автоматический запуск тестов,
@@ -81,6 +81,6 @@ docker-compose exec web python manage.py import_data
 Документация: http://{ваш IP}/redoc/
 
 Тестовый сервер:
-http://51.250.19.76/api/v1/
-http://51.250.19.76/redoc/
-http://51.250.19.76/admin/
+http://130.193.40.60/api/v1/
+http://130.193.40.60/redoc/
+http://130.193.40.60/admin/
