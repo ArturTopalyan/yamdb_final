@@ -16,7 +16,7 @@ Django REST framework 3.12.4
 ### Установка проекта
 
 #### Клонируйте данный репозиторий
-```git clone https://github.com/lauman302/yamdb_final```
+```git clone https://github.com/ArturTopalyan/yamdb_final```
 
 
 ### Установка приложения docker на севере
